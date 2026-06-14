@@ -1049,3 +1049,223 @@ nav a:hover {
         gap: 20px;
     }
 }
+/* ================================
+   GLOBAL SAFETY FIX (NO DESIGN CHANGE)
+================================ */
+html, body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ================================
+   LAPTOP / SMALL DESKTOP (1200px)
+================================ */
+@media (max-width: 1200px) {
+
+    header {
+        padding: 0 30px;
+    }
+
+    .hero {
+        padding-left: 40px;
+    }
+
+    .content {
+        width: 80%;
+    }
+
+    .orange-rect {
+        width: 6cm;
+        height: 15cm;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .variants-display-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================================
+   TABLET (1024px)
+================================ */
+@media (max-width: 1024px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .hero {
+        padding-left: 25px;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    .video-split-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .compact-player-wrapper {
+        height: 300px;
+    }
+
+    .testimonial-wrapper {
+        height: auto;
+    }
+}
+
+/* ================================
+   MOBILE (768px)
+================================ */
+@media (max-width: 768px) {
+
+    header {
+        padding: 12px 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 110px 20px 40px;
+    }
+
+    .sidediv {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .explore-btn {
+        position: static;
+        margin-top: 25px;
+    }
+
+    .orange-rect {
+        width: 100%;
+        height: 180px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-media img {
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+
+    .video-section-split {
+        padding: 50px 20px;
+    }
+
+    .video-split-container {
+        flex-direction: column;
+    }
+
+    .compact-player-wrapper {
+        height: 220px;
+    }
+
+    .testimonial-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 20px;
+    }
+
+    .review-card {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .product-center {
+        position: static;
+        transform: none;
+        margin: 30px 0;
+    }
+
+    .circle-bg {
+        display: none;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-actions-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ================================
+   SMALL MOBILE (480px)
+================================ */
+@media (max-width: 480px) {
+
+    .content h1 {
+        font-size: 18px;
+    }
+
+    .features-header h2 {
+        font-size: 2rem;
+    }
+
+    .panel-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .variants-display-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-card {
+        padding: 20px;
+    }
+}
